@@ -23,12 +23,13 @@ Using this model, the program can evaluate routes, compare travel times, and han
 - Recomputes the best route when certain nodes have added delay
 # How the data is stored
 The city map files use the format:
-```text
-NODE1|NODE2|COST
-1|3|4
-3|7|6
-7|9|8
-```
+
+|NODE1|NODE2|COST|
+|---|---|---|
+|1|3|4|
+|3|7|6|
+|7|9|8|
+
 This means there are roads from 1 to 3, 3 to 7, and 7 to 9, with the listed travel times.
 # Project Structure
 - `delivery_service.py`-main class for building the map and finding routes
